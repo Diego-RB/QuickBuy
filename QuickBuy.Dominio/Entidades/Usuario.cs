@@ -13,7 +13,14 @@ namespace QuickBuy.Dominio.Entidades
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if (string.IsNullOrEmpty(Nome))
+                AdicionarMensagemValidacao("Atenção - O Campo Nome deve está preenchido.");
+            if (string.IsNullOrEmpty(Sobrenome))
+                AdicionarMensagemValidacao("Atenção - O Campo Sobrenome deve está preenchido.");
+            if (string.IsNullOrEmpty(Email))
+                AdicionarMensagemValidacao("Atenção - O Campo Email deve está preenchido.");
+            if (string.IsNullOrEmpty(Senha))
+                AdicionarMensagemValidacao("Atenção - O Campo Senha deve está preenchido.");
         }
     }
 }

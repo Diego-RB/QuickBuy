@@ -9,7 +9,12 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if(string.IsNullOrEmpty(Nome))
+                AdicionarMensagemValidacao("Atenção - O campo Nome deve está preeenchido.");
+            if (string.IsNullOrEmpty(Descricao))
+                AdicionarMensagemValidacao("Atenção - O campo Descricao deve está preenchido.");
+            if (Preco == 0)
+                AdicionarMensagemValidacao("Atenção - O campo Descricao deve está preechido.");
         }
     }
 

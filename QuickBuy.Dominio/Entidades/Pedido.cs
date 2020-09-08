@@ -30,7 +30,7 @@ namespace QuickBuy.Dominio.Entidades
             
 
             if (string.IsNullOrEmpty(CEP))          
-                AdicionarMensagemValidacao("Atenção - O Campo CEP dee está preenchido.");
+                AdicionarMensagemValidacao("Atenção - O Campo CEP deve está preenchido.");
             
         }
     }
