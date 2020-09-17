@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace QuickBuy.Dominio.Contratos
 {
@@ -6,7 +8,7 @@ namespace QuickBuy.Dominio.Contratos
     {
         void Adicionar(Tentity entity);
         Tentity ObterPorId(int id);
-        Tentity OdterTodos();
+        IEnumerable<Tentity> OdterTodos();
         void Atualizar(Tentity entity);
         void Remover(Tentity entity);
     }
