@@ -35,7 +35,7 @@ namespace QuickBuy.Repositorio.Repositorios
            return QuickBuyContexto.Set<TEntity>().Find(id);
         }
 
-        public IEnumerable<TEntity> OdterTodos()
+        public IEnumerable<TEntity> ObterTodos()
         {
             return QuickBuyContexto.Set<TEntity>().ToList();
         }
