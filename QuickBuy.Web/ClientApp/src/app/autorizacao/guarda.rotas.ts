@@ -10,8 +10,8 @@ export class GuardaRotar implements CanActivate {
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-    //this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
     //se o usuário for autenticado
-    return true;
+    return false;
   }
 }
